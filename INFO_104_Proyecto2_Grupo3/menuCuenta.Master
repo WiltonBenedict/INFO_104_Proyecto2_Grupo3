@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="menuCuenta.master.cs" Inherits="INFO_104_Proyecto2_Grupo3.menuCuenta" %>
+
+<!DOCTYPE html>
+<!--INFO-104. Proyecto 2. Grupo 3 -->
+<html>
+<head runat="server">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="asp/css/estiloNavInicio.css" rel="stylesheet" />
+    <link href="asp/css/estiloBoton.css" rel="stylesheet" />
+    <link href="asp/css/estiloGrid.css" rel="stylesheet" />
+    <link href="asp/css/estiloHeader.css" rel="stylesheet" />
+    <link href="asp/css/estiloFondo.css" rel="stylesheet" />
+    <link href="asp/css/estiloFooter.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <ul>
+                <li><a href="InicioCuenta.aspx">Inicio</a></li>
+                <li><a href="Cuentas.aspx">Cuentas</a></li>
+                <li><a href="Roles.aspx">Roles</a></li>
+                <li><a href="CuentaRoles.aspx">Vinculaciones de Cuentas y Roles</a></li>
+                <li><a href="Inicio.aspx">Volver</a></li>
+            </ul>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
